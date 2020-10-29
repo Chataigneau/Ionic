@@ -7,6 +7,23 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  prenom= 'Nicolas'
+  disparait = true;
+  tableaudeprenom = [
+    {
+      name : 'antoine'
+    },
+
+    {
+      name : 'mathieu'
+    },
+    {
+      name : this.prenom
+    }
+  ]
   constructor() {}
+  noshow(){
+    this.disparait= !this.disparait
+  }
 
 }
